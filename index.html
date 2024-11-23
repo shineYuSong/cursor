@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 各个部分 -->
+    <section id="home" class="section">
+        <h1>欢迎来到我的个人主页</h1>
+        <div class="hover-play">
+            <!-- 鼠标悬停时播放的GIF -->
+            <img src="https://via.placeholder.com/400x300" 
+                 data-hover="https://media.giphy.com/media/example/giphy.gif" 
+                 alt="悬停动画">
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="portfolio-item">
+            <video class="auto-play-video" muted loop>
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html> 

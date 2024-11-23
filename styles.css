@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+.hover-play img {
+    transition: transform 0.3s;
+}
+
+.hover-play img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.auto-play-video {
+    width: 100%;
+    height: auto;
+} 

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  overflow-x: hidden;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义动画类 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 导航栏样式 */
+.nav-link {
+  @apply relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* 文字居中样式 */
+.text-center-flex {
+  @apply flex flex-col items-center justify-center text-center gap-6;
+}
+
+/* 图像容器居中样式 */
+.image-container {
+  @apply mx-auto flex justify-center items-center w-full max-w-2xl;
+}
+
+/* 内容垂直居中样式 */
+.content-center {
+  @apply flex flex-col items-center justify-center min-h-screen gap-12;
+}
+
+/* 标题装饰线居中样式 */
+.title-decoration {
+  @apply h-1 bg-blue-400 mx-auto mt-4 rounded-full transform transition-all duration-300;
+}
+
+/* 内容区块居中样式 */
+.content-block {
+  @apply w-full max-w-4xl mx-auto px-4 py-8 flex flex-col items-center gap-8;
+} 
